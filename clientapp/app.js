@@ -27,6 +27,7 @@ module.exports = {
         var self = window.app = this;
         self.JID = StanzaIO.JID;
         var config = localStorage.config;
+        localStorage.clear();
 
         if (!config) {
             console.log('missing config');
